@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Luca Girotti"/>
+        <meta name="author" content="Francesco Barioni"/>
+        <meta name="description" content="Statistics">
+		<meta name="keywords"  content="Statistics.html"/>		
+        
+		<title>Statistics</title>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/kimeiga/bahunya/css/bahunya-0.1.3.css"/>
+
+        <style>
+            header {
+                text-align: center;
+            }           
+            footer {
+                text-align: center;
+            }            
+            fieldset {
+                text-align: center;
+                border: 1px solid #ccc;
+            }
+            a.button {
+                display: inline-block;
+                padding:0.5em 1.8em;
+                border:0.1em solid yellow;
+                background-color: whitesmoke;
+                opacity: 1;
+                margin:0 0.5em 0.5em 0;
+                border-radius:25px;
+                box-sizing: border-box;
+                text-decoration:none;
+                font-family:'Roboto',sans-serif;
+                font-weight:200;
+                color:black;
+                text-align:center;
+                transition: all 0.2s;
+                width: 230px;
+            }
+                a.button:hover {
+                color:yellow;
+                background-color:black;
+                opacity: 1;
+                text-decoration:none;
+            }  input {
+                border: 0.1em solid black;
+                width: 150px;
+                
+                }
+                input[type="submit"] {
+                border-radius: 20px;
+                font-weight: bold;
+                }
+                label {
+                font-weight: bold;
+                }
+        </style>
+    </head>
+
+    <body>
+		<form action="Year_Book.php" method="POST">
+			<fieldset>
+                <h3>Number of books published in a specific year</h3>
+                <p>Insert the year:</p>
+                    <label>Year:</label>
+                    <input type="text" minlength="4" maxlength="4" name="YEAR">
+                    <br>
+                    <input type="submit" value="SUBMIT">
+			</fieldset>
+        </form>
+        <form action="Library_Loans.php" method="POST">
+			<fieldset>
+                <h3>Number of loans which have been made in a specific library</h3>
+                <p>Insert the library code:</p>
+                    <label>Library code:</label>
+                    <input type="number" min="1" max="12" name="LIBRARY_CODE">
+                    <br>
+                    <input type="submit" value="SUBMIT">
+			</fieldset>
+        </form>
+        <form action="Author_Books.php" method="POST">
+			<fieldset>
+                <h3>Number of books published by a specific author</h3>
+                <p>Insert the author code:</p>
+                    <label>Author code:</label>
+                    <input type="number" min="1" name="AUTHOR_CODE">
+                    <br>
+                    <input type="submit" value="SUBMIT">
+			</fieldset>
+        </form>
+        <a class="button" href="index.html">Back to the front page</a>
+    </body>
+</html>

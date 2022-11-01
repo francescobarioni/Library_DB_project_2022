@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Luca Girotti" />
+        <meta name="author" content="Francesco Barioni" />
+        <meta name="description" content="Book Research">
+		<meta name="keywords"  content="Search_Book.html" />		
+        
+		<title>Book Research</title>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/kimeiga/bahunya/css/bahunya-0.1.3.css"/>
+
+        <style>
+            header {
+                text-align: center;
+            }           
+            footer {
+                text-align: center;
+            }            
+            fieldset {
+                text-align: center;
+                border: 1px solid #ccc;
+            }
+            a.button {
+                display: inline-block;
+                padding:0.5em 1.8em;
+                border:0.1em solid yellow;
+                background-color: whitesmoke;
+                opacity: 1;
+                margin:0 0.5em 0.5em 0;
+                border-radius:25px;
+                box-sizing: border-box;
+                text-decoration:none;
+                font-family:'Roboto',sans-serif;
+                font-weight:200;
+                color:black;
+                text-align:center;
+                transition: all 0.2s;
+                width: 230px;
+            }
+                a.button:hover {
+                color:yellow;
+                background-color:black;
+                opacity: 1;
+                text-decoration:none;
+            }   input {
+                    border: 0.1em solid black;
+                    
+                }
+                input[type="submit"] {
+                    border-radius: 20px;
+                    font-weight: bold;
+                }
+                label {
+                    font-weight: bold;
+                }
+
+        </style>
+    </head>
+
+    <body>
+		<form action="Search_Book.php" method="POST">
+			<fieldset>
+                <h2>Search book by title</h2>
+                <p>Insert the full/partial title.</p>
+                    <label>Title:</label>
+                    <input type="text" name="TITLE">
+                    <br>
+                    <input type="submit" value="SEARCH">
+			</fieldset>
+        </form>
+        <form action="Search_Book_By_Author.php" method="POST">
+			<fieldset>
+                <h2>Search book by author</h2>
+                <p>Insert the surname of the author:<br></p>
+                    <label>Surname:</label>
+                    <input type="text" name="SURNAME">
+                    <br>
+                    <input type="submit" value="SEARCH">
+			</fieldset>
+        </form>
+        <a class="button" href="index.html">Go back to the frontpage</a>
+    </body>
+
+</html>

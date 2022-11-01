@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Luca Girotti" />
+        <meta name="author" content="Francesco Barioni" />
+        <meta name="description" content="Library front page">
+		<meta name="keywords"  content="index.html" />		
+        
+		<title>Library management UNIFE</title>
+        <link rel="stylesheet" href="https://cdn.rawgit.com/kimeiga/bahunya/css/bahunya-0.1.3.css"/>
+
+        <style>
+            header {
+                text-align: center;
+            }           
+            footer {
+                text-align: center;
+            }            
+            fieldset {
+                text-align: center;
+                border: 1px solid;
+                border-color: yellowgreen;
+                border-radius: 33px;
+
+            }
+            a.button {
+                display: inline-block;
+                padding:0.35em 1.2em;
+                border:0.1em solid yellow;
+                background-color: whitesmoke;
+                opacity: 1;
+                margin:0 0.3em 0.3em 0;
+                border-radius:20px;
+                box-sizing: border-box;
+                text-decoration:none;
+                font-family:'Roboto',sans-serif;
+                font-weight:400;
+                color:black;
+                text-align:center;
+                transition: all 0.2s;
+                width: 230px;
+            }
+                a.button:hover {
+                color:yellow;
+                background-color:black;
+                opacity: 1;
+                text-decoration:none;
+            }h3{
+                display: inline;
+                text-align:center;
+            }
+            .center{
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+        
+    </head>
+    <header>
+        <fieldset>
+        <a href="http://www.unife.it/it"> <img src="unife_logo.png" style="width:200px; height:150px;"></a>
+        <h2>Library of the Univeristy of Ferrara</h2>
+        </fieldset>
+    </header>
+    <body>
+        <table align="center">
+                <tr>
+                    <td>
+                    <fieldset>
+                        <p class = "center"><h3 class = "center">SEARCH</h3></p>
+                        <p>
+                        <a class="button" href="Search_User.html">Search user and his history of loans</a><br>
+                        <a class="button" href="Search_Book.html">Search Book</a><br>
+                        <a class="button" href="Search_Author.html">Search Author</a><br>
+                        <a class="button" href="Search_Loan.html">Look for a loan</a><br>
+                        </p>
+                    </fieldset> 
+                    </td>
+                    <td>
+                    <fieldset>
+                        <p class = "center"><h3 class = "center">LIBRARY MANAGEMENT</h3></p>
+                        <p>
+                            <a class="button" href="User_list.php">User List</a><br>
+                            <a class="button" href="Loans_History.php">Loan History</a><br>
+                            <a class="button" href="Statistics.html">Statistics</a><br>    
+                        </p>
+                    </fieldset>
+                    </td>
+
+                    <td>
+                        <fieldset>
+                            <p class = "center"><h3 class = "center">EXTRA QUERIES</h3></p>
+                            <p>
+                                <a class="button" href="Most_Used_Languages.php">Most used languages</a><br>
+                                <a class="button" href="Overdue_Loans.php">Overdue Loans</a><br>
+                            </p>
+                        </fieldset>  
+                    </td>
+                </tr>
+        </table>
+    </body>
+</html>
