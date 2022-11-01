@@ -1,2 +1,2 @@
-# Database_project_2022
+# Library Database Project
 Database project 2022 --> Creation of a library database
